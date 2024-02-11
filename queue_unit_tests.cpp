@@ -51,6 +51,7 @@ TEST_CASE("Queue tester") {
             int function_queue_value = dequeue_node_queue(&queue_made_by_fcn).number;
             int manual_queue_value = dequeue_node_queue(&queue_manually_made).number;
 
+            CHECK_EQ(function_queue_value, manual_queue_value);
         }
 
     }
